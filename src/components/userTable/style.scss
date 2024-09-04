@@ -1,0 +1,109 @@
+.table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #4a90e2;
+  }
+  
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #4a90e2;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .user-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 4px 5px 5px #4a90e2;
+  }
+  
+  .table-head {
+    background-color: #4a90e2;
+    color: #fff;
+  }
+  
+  .table-row {
+    display: table-row;
+  }
+  
+  .table-column-header {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border-right: 1px solid #ddd;
+  }
+  
+  .table-filter-input {
+    width: 90%;
+    margin-top: 8px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    // transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+  
+    &:focus, &:focus {
+      border-color: #4a90e2;
+      outline: none;
+      transform: scale(1.05);
+    }
+  }
+  
+  .table-body {
+    display: table-row-group;
+  }
+  
+  .table-body-row {
+    height: 70px;
+    transition: background-color 0.2s;
+  
+    &:nth-child(even) {
+      background-color: #4a90e26b;
+    }
+  
+    &:hover {
+      background-color: #e6f7ff;
+    }
+  }
+  
+  .table-cell {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    color: #333;
+  }
+  
