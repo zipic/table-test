@@ -3,7 +3,7 @@
 A React application for managing and filtering user data in a table format. The app fetches user data from an API and provides a user-friendly interface for searching and filtering.
 
 ## Live Demo
-Check out the live demo [here](http://zipic.gitgub.io/table-test)
+Check out the live demo [here](https://zipic.github.io/table-test/)
 
 ## Techonologies used:
 - HTML
